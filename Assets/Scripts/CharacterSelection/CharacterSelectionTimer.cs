@@ -7,6 +7,9 @@ namespace Game.CharacterSelection
     [DisallowMultipleComponent]
     public class CharacterSelectionTimer : MonoBehaviour
     {
+        [Header("Settings")] 
+        [SerializeField] private CharacterSelectionSettings _settings;
+        
         [Header("Events")] 
         public IntEvent OnTimerUpdated;
         public UnityEvent OnTimerOver;
@@ -18,7 +21,7 @@ namespace Game.CharacterSelection
 
         private IEnumerator TimerUpdateRoutine()
         {
-            var timer = 15;
+            var timer = _settings.SecondsPerSelection;
 
             while (timer > 0)
             {
