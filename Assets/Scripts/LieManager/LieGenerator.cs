@@ -17,8 +17,19 @@ namespace Game.Lies
         {
             foreach(LiesScript lie in _liesList.Lies)
             {
-               // Debug.LogError(lie.LieTags);
+               foreach(string tag in lie.LieTags)
+                {
+                    if(itemTag == tag)
+                    {
+
+                    }
+                }
             }
+        }
+
+        public LiesScript GetCharacterLie()
+        {
+            return MainLie;
         }
     }
 }

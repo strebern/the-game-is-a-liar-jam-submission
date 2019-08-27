@@ -27,6 +27,13 @@ namespace Game.Inventory
             }
         }
 
+        //PUBLIC
+
+        public List<ItemScript> GetCharacterItems()
+        {
+            return _characterItemList;
+        }
+
         //PRIVATE
 
         private void SetCharacterItems()
