@@ -8,7 +8,7 @@ public class LieListFinderTool : MonoBehaviour
     [SerializeField] LiesList _liesList;
     [SerializeField] ItemList _itemList;
 
-    [SerializeField] LiesScript[] _allLies;
+    [SerializeField] Lie[] _allLies;
 
     private void Update()
     {
@@ -60,11 +60,11 @@ public class LieListFinderTool : MonoBehaviour
         int Wand = 0;
         int Axe = 0;
 
-        foreach (LiesScript lie in _liesList.LiesCompleteList)
+        foreach (Lie lie in _liesList.Lies)
         {
-            if (lie.LieRank == rank)
+            if (lie.Rank == rank)
             {
-                foreach (string lieTag in lie.LieTags)
+                foreach (string lieTag in lie.Tags)
                 {
                     // Debug.LogError(lieTag);
 
@@ -130,23 +130,23 @@ public class LieListFinderTool : MonoBehaviour
         int i = 0;
         while (i <= 50)
         {
-            foreach (ItemScript item in _itemList.ItemSelection)
+            foreach (Item item in _itemList.Items)
             {
-                ItemListBuffer.Add(item.ItemName);
+                ItemListBuffer.Add(item.Name);
             }
 
 
 
             string item1 = ItemListBuffer[Random.Range(0, ItemListBuffer.Count)];
-            _allLies[i].LieTags[0] = item1;
+            _allLies[i].Tags[0] = item1;
             ItemListBuffer.Remove(item1);
 
             string item2 = ItemListBuffer[Random.Range(0, ItemListBuffer.Count)];
-            _allLies[i].LieTags[1] = item2;
+            _allLies[i].Tags[1] = item2;
             ItemListBuffer.Remove(item2);
 
             string item3 = ItemListBuffer[Random.Range(0, ItemListBuffer.Count)];
-            _allLies[i].LieTags[2] = item3;
+            _allLies[i].Tags[2] = item3;
 
             ItemListBuffer.Clear();
             i++;

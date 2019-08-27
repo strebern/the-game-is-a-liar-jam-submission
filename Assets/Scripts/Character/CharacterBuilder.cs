@@ -8,7 +8,7 @@ namespace Game.Character
     public class CharacterBuilder : MonoBehaviour
     {
         [Header("References")]
-        [SerializeField] private CharacterInventory _inventory;
+        [SerializeField] private Inventory.Inventory _inventory;
 
         [Header("Items Objects")]
         [SerializeField] private List<GameObject> _itemsObjects;
@@ -17,9 +17,9 @@ namespace Game.Character
         {
             foreach (var itemObject in _itemsObjects)
             {
-                foreach (var item in _inventory.GetCharacterItems())
+                foreach (var item in _inventory.Items)
                 {
-                    if (item.ItemName == itemObject.name) // TODO: REPLACE WITH LABEL
+                    if (item.Name == itemObject.name) // TODO: REPLACE WITH LABEL
                     {
                         itemObject.SetActive(true);
                     }

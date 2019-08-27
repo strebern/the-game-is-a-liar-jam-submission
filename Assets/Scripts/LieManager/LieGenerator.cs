@@ -6,12 +6,12 @@ namespace Game.Lies
 {
     public class LieGenerator : MonoBehaviour
     {
-        [HideInInspector] public LiesScript MainLie;
+        [HideInInspector] public Lie MainLie;
 
-        [SerializeField] LiesList _liesList;
+        [Header("References")]
+        [SerializeField] LiesList _completeLiesList;
 
-        private List<LiesScript> _taggedLieList = new List<LiesScript>();
-
+        private List<Lie> _taggedLieList = new List<Lie>();
 
         public void GenerateLie(string itemTag)
         {
@@ -22,23 +22,16 @@ namespace Game.Lies
                 lieRank = Random.Range(3, 6);
             Debug.Log(lieRank);
 
-            foreach (LiesScript lie in _liesList.LiesCompleteList)
+            foreach (var lie in _completeLiesList.Lies)
             {
-                if (lie.LieTags.Contains(itemTag) && lie.LieRank == lieRank)
+                if (lie.Tags.Contains(itemTag) && lie.Rank == lieRank)
                 {
                     _taggedLieList.Add(lie);
                 }
             }
 
-
             MainLie = _taggedLieList[Random.Range(0, _taggedLieList.Count)];
-            Debug.Log(MainLie.LieText);
-
-        }
-
-        public LiesScript GetCharacterLie()
-        {
-            return MainLie;
+            Debug.Log(MainLie.Text);
         }
     }
 }

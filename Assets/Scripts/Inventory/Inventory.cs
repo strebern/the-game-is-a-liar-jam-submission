@@ -5,13 +5,17 @@ using UnityEngine.Events;
 
 namespace Game.Inventory
 {
-    public class CharacterInventory : MonoBehaviour
+    [DisallowMultipleComponent]
+    public class Inventory : MonoBehaviour
     {
+        public List<Item> Items = new List<Item>();
+        
+        [Header("Events")]
         public StringEvent OnItemsSet;
 
-        [SerializeField] ItemList _itemList;
+        [Header("References")]
+        [SerializeField] private ItemList _completeItemList;
 
-        private List<ItemScript> _characterItemList = new List<ItemScript>();
         //CORE
 
         private void Awake()
@@ -27,30 +31,23 @@ namespace Game.Inventory
             }
         }
 
-        //PUBLIC
-
-        public List<ItemScript> GetCharacterItems()
-        {
-            return _characterItemList;
-        }
-
         //PRIVATE
 
         private void SetCharacterItems()
         {
-            _characterItemList.Clear();
+            Items.Clear();
             int step = 3;
-            List<ItemScript> ItemListBuffer = new List<ItemScript>();
+            List<Item> ItemListBuffer = new List<Item>();
 
-            foreach (ItemScript item in _itemList.ItemSelection)
+            foreach (Item item in _completeItemList.Items)
             {
                 ItemListBuffer.Add(item);
             }
 
             while (step > 0)
             {
-                ItemScript item = ItemListBuffer[Random.Range(0, ItemListBuffer.Count)];
-                _characterItemList.Add(item);
+                Item item = ItemListBuffer[Random.Range(0, ItemListBuffer.Count)];
+                Items.Add(item);
                 ItemListBuffer.Remove(item);
                 Debug.Log("Selected : " + item);
 
@@ -62,8 +59,8 @@ namespace Game.Inventory
 
         private string GetRandomItemTag()
         {
-            ItemScript item = _characterItemList[Random.Range(0, _characterItemList.Count)];
-            return item.ItemName;
+            Item item = Items[Random.Range(0, Items.Count)];
+            return item.Name;
         }
     }
 }

@@ -6,6 +6,6 @@ namespace Game.Character
     [CreateAssetMenu(fileName = "CharacterList", menuName = "Character/CharacterList", order = 0)]
     public class CharacterList : ScriptableObject
     {
-        public List<CharacterInformation> Characters;
+        public List<Character> Characters;
     }
 }

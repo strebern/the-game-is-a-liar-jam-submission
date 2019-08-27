@@ -6,10 +6,10 @@ using UnityEngine;
 namespace Game.Character
 {
     [CreateAssetMenu(fileName = "CharacterSettings", menuName = "Character/CharacterSettings")]
-    public class CharacterInformation : ScriptableObject
+    public class Character : ScriptableObject
     {
         public string Name;
-        public List<ItemScript> Items;
-        public LiesScript Lie;
+        public List<Item> Items;
+        public Lie Lie;
     }
 }
