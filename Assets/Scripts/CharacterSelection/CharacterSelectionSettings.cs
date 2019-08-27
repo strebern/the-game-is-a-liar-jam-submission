@@ -9,8 +9,7 @@ namespace Game.CharacterSelection
     {
         public int CrewSize;
         public int CharactersPerSelection;
-        public float SecondsPerSelection;
+        public int SecondsPerSelection;
         public GameObject CharacterPrefab;
     }
 }
-
