@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using Game.CharacterSelection;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Game.CharacterSelection
+namespace Game.Character
 {
     [DisallowMultipleComponent]
     public class CharacterSpawner : MonoBehaviour
@@ -20,7 +21,7 @@ namespace Game.CharacterSelection
         {
             for (int i = 0; i < _settings.CharactersPerSelection; i++)
             {
-                Instantiate(_settings.CharacterPrefab, _spawns[i].position, Quaternion.identity);
+                var characterInstance = Instantiate(_settings.CharacterPrefab, _spawns[i]);
             }
             
             OnAllCharactersSpawned.Invoke();

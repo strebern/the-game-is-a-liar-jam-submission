@@ -65,13 +65,5 @@ namespace Game.Inventory
             ItemScript item = _characterItemList[Random.Range(0, _characterItemList.Count)];
             return item.ItemName;
         }
-
-        private void SetItemsGraphics()
-        {
-            foreach (ItemScript item in _characterItemList)
-            {
-                // set item graphics data
-            }
-        }
     }
 }
