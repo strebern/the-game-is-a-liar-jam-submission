@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Game.CharacterSelection
 {
@@ -12,12 +13,17 @@ namespace Game.CharacterSelection
         [Header("Spawn Points")] 
         [SerializeField] private List<Transform> _spawns;
 
+        [Header("Events")] 
+        public UnityEvent OnAllCharactersSpawned;
+
         public void SpawnNewCharacters()
         {
             for (int i = 0; i < _settings.CharactersPerSelection; i++)
             {
                 Instantiate(_settings.CharacterPrefab, _spawns[i].position, Quaternion.identity);
             }
+            
+            OnAllCharactersSpawned.Invoke();
         }
 
         public void DeleteCharacters()
