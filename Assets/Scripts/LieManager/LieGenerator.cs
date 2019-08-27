@@ -6,7 +6,7 @@ namespace Game.Lies
 {
     public class LieGenerator : MonoBehaviour
     {
-       [HideInInspector] public LiesScript MainLie;
+        [HideInInspector] public LiesScript MainLie;
 
         [SerializeField] LiesList _liesList;
 
@@ -15,15 +15,17 @@ namespace Game.Lies
 
         public void GenerateLie(string itemTag)
         {
-            foreach(LiesScript lie in _liesList.Lies)
+            foreach (LiesScript lie in _liesList.LiesCompleteList)
             {
-               foreach(string tag in lie.LieTags)
+                if (lie.LieTags.Contains(itemTag))
                 {
-                    if(itemTag == tag)
-                    {
-
-                    }
+                    _taggedLieList.Add(lie);
                 }
+            }
+            Debug.LogError(itemTag);
+            foreach (LiesScript lie in _taggedLieList)
+            {
+                Debug.LogError(lie);
             }
         }
 
