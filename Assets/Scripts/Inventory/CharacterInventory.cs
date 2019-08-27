@@ -21,7 +21,7 @@ namespace Game.Inventory
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Keypad0))
+            if (Input.GetKey(KeyCode.KeypadPeriod))
             {
                 SetCharacterItems();
             }
@@ -52,7 +52,7 @@ namespace Game.Inventory
                 ItemScript item = ItemListBuffer[Random.Range(0, ItemListBuffer.Count)];
                 _characterItemList.Add(item);
                 ItemListBuffer.Remove(item);
-                Debug.LogError("Selected : " + item);
+                Debug.Log("Selected : " + item);
 
                 step--;
             }

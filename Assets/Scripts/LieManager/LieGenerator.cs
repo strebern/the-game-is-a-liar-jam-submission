@@ -15,18 +15,25 @@ namespace Game.Lies
 
         public void GenerateLie(string itemTag)
         {
+            Debug.Log(itemTag);
+
+            int lieRank = Random.Range(0, 6);
+            if (lieRank == 5)
+                lieRank = Random.Range(3, 6);
+            Debug.Log(lieRank);
+
             foreach (LiesScript lie in _liesList.LiesCompleteList)
             {
-                if (lie.LieTags.Contains(itemTag))
+                if (lie.LieTags.Contains(itemTag) && lie.LieRank == lieRank)
                 {
                     _taggedLieList.Add(lie);
                 }
             }
-            Debug.LogError(itemTag);
-            foreach (LiesScript lie in _taggedLieList)
-            {
-                Debug.LogError(lie);
-            }
+
+
+            MainLie = _taggedLieList[Random.Range(0, _taggedLieList.Count)];
+            Debug.Log(MainLie.LieText);
+
         }
 
         public LiesScript GetCharacterLie()
