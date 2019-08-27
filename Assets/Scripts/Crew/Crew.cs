@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Game.Crew
 {
-    [CreateAssetMenu(fileName = "CrewSettings", menuName = "Crew/CrewSettings", order = 0)]
+    [CreateAssetMenu(fileName = "Crew", menuName = "Characters/Crew", order = 0)]
     public class Crew : ScriptableObject
     {
         public int MaxCrewSize;

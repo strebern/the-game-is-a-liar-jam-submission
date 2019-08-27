@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Game.Character
 {
-    [CreateAssetMenu(fileName = "CharacterSettings", menuName = "Character/CharacterSettings")]
+    [CreateAssetMenu(fileName = "Character", menuName = "Characters/Character")]
     public class Character : ScriptableObject
     {
         public string Name;

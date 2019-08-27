@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainLie: {fileID: 0}
-  _liesList: {fileID: 11400000, guid: f734a25ffc7b25c40847581a353ebd0d, type: 2}
+  _completeLiesList: {fileID: 0}
 --- !u!1 &8615023298615990524
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,6 +182,7 @@ GameObject:
   - component: {fileID: 4953068748821649703}
   - component: {fileID: 3150882696847049002}
   - component: {fileID: 726055461734830825}
+  - component: {fileID: 7481933179918567136}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -223,6 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64a2ced13683b8f43a7b89c2f120c8c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Items: []
   OnItemsSet:
     m_PersistentCalls:
       m_Calls:
@@ -250,7 +252,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Game.StringEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  _itemList: {fileID: 11400000, guid: 121cf0b0916093d4f8017f911b577552, type: 2}
+  _completeItemList: {fileID: 11400000, guid: 121cf0b0916093d4f8017f911b577552, type: 2}
 --- !u!114 &726055461734830825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +278,20 @@ MonoBehaviour:
   - {fileID: 4801120064843901081}
   - {fileID: 261098396111236420}
   - {fileID: 6084962263291166043}
+--- !u!114 &7481933179918567136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8615023298615990524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7641bd4fd204583a3d03b6c869bab79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inventory: {fileID: 3150882696847049002}
+  _characterName: {fileID: 0}
 --- !u!1001 &5427288003510929928
 PrefabInstance:
   m_ObjectHideFlags: 0
