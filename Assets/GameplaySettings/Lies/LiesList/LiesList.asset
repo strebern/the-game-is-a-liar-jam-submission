@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25400df01167b4344aa84b93f9f5a883, type: 3}
   m_Name: LiesList
   m_EditorClassIdentifier: 
-  Lies:
+  LiesCompleteList:
   - {fileID: 11400000, guid: 0b3c8a0ef2844594790ee34804af270d, type: 2}
   - {fileID: 11400000, guid: e89c69c1171d24643bd4f65b3a51468b, type: 2}
   - {fileID: 11400000, guid: 027a3039d5ac2324b96419ba01a7c2da, type: 2}

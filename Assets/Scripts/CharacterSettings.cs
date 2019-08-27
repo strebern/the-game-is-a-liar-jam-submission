@@ -7,7 +7,7 @@ namespace Game
     public class CharacterSettings : ScriptableObject
     {
         public string Name;
-        public List<ItemScript> Items;
-        public LiesScript Lie;
+        public List<Inventory.ItemScript> Items;
+        public Lies.LiesScript Lie;
     }
 }

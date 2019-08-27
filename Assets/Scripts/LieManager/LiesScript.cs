@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace Game.Lies
 {
@@ -7,6 +8,6 @@ namespace Game.Lies
     {
         public int LieRank;
         public string LieText;
-        public string[] LieTags;
+        public List<string> LieTags = new List<string>();
     }
 }
