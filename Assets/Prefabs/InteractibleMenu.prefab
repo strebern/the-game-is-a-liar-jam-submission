@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 656fd9f855b54f6292ace070f0776218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settings: {fileID: 0}
+  _settings: {fileID: 11400000, guid: 6341d379c8a5b4e4297f8b08e5af9f8f, type: 2}
   _spawns:
   - {fileID: 2392626666619028857}
   - {fileID: 1434876147536882942}
