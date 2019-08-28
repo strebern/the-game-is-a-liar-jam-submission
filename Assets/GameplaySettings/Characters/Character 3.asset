@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: Character 3
   m_EditorClassIdentifier: 
   Name: 
-  Items: []
+  Items:
+  - {fileID: 11400000, guid: dd75dc9a44797aa4aaa0f295222ba4a5, type: 2}
+  - {fileID: 11400000, guid: 13279f763f765484d9ccf1a934626b63, type: 2}
+  - {fileID: 11400000, guid: 2add6929307af99499dd837ec753fb07, type: 2}
   Lie: {fileID: 0}

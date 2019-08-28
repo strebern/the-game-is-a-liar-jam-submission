@@ -16,6 +16,7 @@ namespace Game.CharacterSelection
 
         public void StartTimer()
         {
+            StopAllCoroutines();
             StartCoroutine(TimerUpdateRoutine());
         }
 
