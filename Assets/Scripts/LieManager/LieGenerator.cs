@@ -15,7 +15,7 @@ namespace Game.Lies
 
         public void GenerateLie(string itemTag)
         {
-            Debug.Log(itemTag);
+            //Debug.Log(itemTag);
 
             int lieRank = Random.Range(0, 6);
             if (lieRank == 5)

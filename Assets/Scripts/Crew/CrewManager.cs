@@ -25,7 +25,7 @@ namespace Game.Crew
 
             OnCrewSizeIncreased?.Invoke(CurrentCrewSize);
 
-            if (_crew.Members.Count >= _crew.MaxCrewSize)
+            if (CurrentCrewSize >= _crew.MaxCrewSize)
             {
                 OnCrewFull?.Invoke();
             }

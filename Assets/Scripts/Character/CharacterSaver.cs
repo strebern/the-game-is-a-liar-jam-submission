@@ -8,10 +8,11 @@ namespace Game.Character
     {
         public void SaveCharacter()
         {
-            var crewManager = FindObjectOfType<CrewManager>();
             var inventory = GetComponentInChildren<Inventory.Inventory>();
-            
-            crewManager.AddCharacterToCrew(inventory.Items, "Yo");
+            if (inventory)
+            {
+                FindObjectOfType<CrewManager>()?.AddCharacterToCrew(inventory.Items, "Yo");   
+            }
         }
     }
 }

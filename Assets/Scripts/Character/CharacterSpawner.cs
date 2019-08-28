@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Security.Cryptography;
 using Game.CharacterSelection;
+using Game.Utils;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -27,17 +28,14 @@ namespace Game.Character
                 var characterInstance = Instantiate(_settings.CharacterPrefab, _spawns[i]);
             }
             
-            OnAllCharactersSpawned.Invoke();
+            OnAllCharactersSpawned?.Invoke();
         }
 
         public void DeleteCharacters()
         {
             foreach (var spawn in _spawns)
             {
-                if (spawn.childCount > 0)
-                {
-                    Destroy(spawn.GetChild(0));
-                }
+                spawn.GetComponentInChildren<SelfDestroyer>()?.DestroySelf();
             }
         }
     }
