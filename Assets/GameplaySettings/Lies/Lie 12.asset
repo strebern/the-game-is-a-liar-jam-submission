@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e07208d8f649404f9b71823bf4416d8, type: 3}
   m_Name: Lie 12
   m_EditorClassIdentifier: 
-  Rank: 1
-  Text: 
+  Rank: 2
+  Text: "j'ai tout ce qu'il faut pour attaquer de loin, il faudrais quand m\xEAme
+    pas que l'on me fasse du mal !"
   Tags:
   - Bow
   - Spear

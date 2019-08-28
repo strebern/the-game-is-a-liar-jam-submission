@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e07208d8f649404f9b71823bf4416d8, type: 3}
   m_Name: Lie 15
   m_EditorClassIdentifier: 
-  Rank: 1
-  Text: 
+  Rank: 2
+  Text: "Mon armure s'illumine tel un un \xE9clair"
   Tags:
   - Cape
   - Wand

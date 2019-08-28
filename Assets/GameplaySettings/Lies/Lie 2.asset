@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e07208d8f649404f9b71823bf4416d8, type: 3}
   m_Name: Lie 2
   m_EditorClassIdentifier: 
-  Rank: 0
-  Text: 
+  Rank: 1
+  Text: "Tu a devant toi un expert des armes tranchantes, j'ai en effet \xE9t\xE9
+    form\xE9 par le poissonier du coin"
   Tags:
   - Sword
   - Helmet

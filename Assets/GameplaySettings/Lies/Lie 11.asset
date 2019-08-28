@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e07208d8f649404f9b71823bf4416d8, type: 3}
   m_Name: Lie 11
   m_EditorClassIdentifier: 
-  Rank: 1
-  Text: 
+  Rank: 2
+  Text: "Ma hache est tranchante et ma port\xE9e est sans limite. vous avez vu mes
+    lunettes ?"
   Tags:
   - Axe
   - Bow

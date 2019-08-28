@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e07208d8f649404f9b71823bf4416d8, type: 3}
   m_Name: Lie 35
   m_EditorClassIdentifier: 
-  Rank: 3
-  Text: 
+  Rank: 4
+  Text: "Je peux tuer 5 personnes avant de poser pied \xE0 terre"
   Tags:
   - Helmet
   - Cape

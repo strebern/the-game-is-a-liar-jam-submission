@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e07208d8f649404f9b71823bf4416d8, type: 3}
   m_Name: Lie 18
   m_EditorClassIdentifier: 
-  Rank: 1
-  Text: 
+  Rank: 2
+  Text: "Vous ne vous rendez pas compte de ce que \xE7a coute de laver une cape apr\xE8s
+    avoir d\xE9coup\xE9 du malfrat"
   Tags:
   - Cape
   - Helmet

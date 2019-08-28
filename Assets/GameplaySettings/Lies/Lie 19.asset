@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e07208d8f649404f9b71823bf4416d8, type: 3}
   m_Name: Lie 19
   m_EditorClassIdentifier: 
-  Rank: 1
-  Text: 
+  Rank: 2
+  Text: "Je tiens cette \xE9p\xE9e de mon grand p\xE8re, un tueur de dragon, mais
+    elle est trop lourde pour l'utiliser."
   Tags:
   - Sword
   - Dagger

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e07208d8f649404f9b71823bf4416d8, type: 3}
   m_Name: Lie 3
   m_EditorClassIdentifier: 
-  Rank: 0
-  Text: 
+  Rank: 1
+  Text: Je suis un barde, je tape sur mon boucllier avec ma hache pour faire toute
+    sorte de musique
   Tags:
   - Cape
   - Axe

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e07208d8f649404f9b71823bf4416d8, type: 3}
   m_Name: Lie 24
   m_EditorClassIdentifier: 
-  Rank: 2
-  Text: 
+  Rank: 3
+  Text: "j'ai \xE9t\xE9 \xE9lev\xE9 par des gorilles et d\xE9vellop\xE9 une technique
+    ultime du combat a main nue"
   Tags:
   - Dagger
   - Unarmed

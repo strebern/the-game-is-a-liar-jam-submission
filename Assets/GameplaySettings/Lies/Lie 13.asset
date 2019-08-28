@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e07208d8f649404f9b71823bf4416d8, type: 3}
   m_Name: Lie 13
   m_EditorClassIdentifier: 
-  Rank: 1
-  Text: 
+  Rank: 2
+  Text: on m'apelle le guerrier d'acier au bouclier, ou le guerrier au bouclier d'acier...
+    je ne sais plus
   Tags:
   - Helmet
   - Unarmed

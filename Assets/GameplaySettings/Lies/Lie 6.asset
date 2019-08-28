@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e07208d8f649404f9b71823bf4416d8, type: 3}
   m_Name: Lie 6
   m_EditorClassIdentifier: 
-  Rank: 0
-  Text: 
+  Rank: 1
+  Text: Vous saviez que ce n'est pas facile d'utiliser un arc en armure ?
   Tags:
   - Cape
   - Armor

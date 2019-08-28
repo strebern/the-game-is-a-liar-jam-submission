@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e07208d8f649404f9b71823bf4416d8, type: 3}
   m_Name: Lie 49
   m_EditorClassIdentifier: 
-  Rank: 4
-  Text: 
+  Rank: 5
+  Text: "j'ai un tatouage pour chaque cr\xE9atures que j'ai tu\xE9, j'en ai mille"
   Tags:
   - Unarmed
   - Spear

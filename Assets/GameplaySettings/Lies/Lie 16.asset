@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e07208d8f649404f9b71823bf4416d8, type: 3}
   m_Name: Lie 16
   m_EditorClassIdentifier: 
-  Rank: 1
-  Text: 
+  Rank: 2
+  Text: "J'ai r\xE9cuperer l'armure d'un bandit, mais il y a un gros trou derriere
+    maintenant..."
   Tags:
   - Dagger
   - Armor
