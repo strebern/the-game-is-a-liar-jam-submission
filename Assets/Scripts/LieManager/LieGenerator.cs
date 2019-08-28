@@ -17,9 +17,9 @@ namespace Game.Lies
         {
             //Debug.Log(itemTag);
 
-            int lieRank = Random.Range(0, 6);
+            int lieRank = Random.Range(1, 5);
             if (lieRank == 5)
-                lieRank = Random.Range(3, 6);
+                lieRank = Random.Range(3, 5);
             Debug.Log(lieRank);
 
             foreach (var lie in _completeLiesList.Lies)
