@@ -120,7 +120,7 @@ public class LieListFinderTool : MonoBehaviour
         Debug.LogError("Wand : " + Wand);
         Debug.LogError("Axe : " + Axe);
     }
-
+    /*
     private void SetRandomeLiesValueByRank()
     {
 
@@ -150,4 +150,5 @@ public class LieListFinderTool : MonoBehaviour
             i++;
         }
     }
+    */
 }
