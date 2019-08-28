@@ -8,6 +8,6 @@ namespace Game.Lies
     {
         public int Rank;
         public string Text;
-        public List<string> Tags = new List<string>();
+        public List<string> Tags;
     }
 }
