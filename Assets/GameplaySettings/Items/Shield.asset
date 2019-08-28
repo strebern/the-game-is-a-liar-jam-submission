@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 287b50423c1ba6f4abebc744d1e4c43e, type: 3}
   m_Name: Shield
   m_EditorClassIdentifier: 
-  ItemName: Shield
-  TAG: 
-  ItemSprite: {fileID: 0}
+  Name: Shield
+  Sprite: {fileID: 0}

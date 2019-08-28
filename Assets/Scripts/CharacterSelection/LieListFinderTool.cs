@@ -37,10 +37,10 @@ public class LieListFinderTool : MonoBehaviour
             FindLiesByRank(5);
         }
 
-        /*  WARNING USE ONLY TO RANDOMIZE ALL LIES TAGS
+        /* //  WARNING USE ONLY TO RANDOMIZE ALL LIES TAGS
         if (Input.GetKeyDown(KeyCode.Keypad6))
         {
-           // SetRandomeLiesValueByRank();
+            SetRandomeLiesValueByRank();
         }
         */
     }
@@ -128,14 +128,12 @@ public class LieListFinderTool : MonoBehaviour
 
 
         int i = 0;
-        while (i <= 50)
+        while (i <= 60)
         {
             foreach (Item item in _itemList.Items)
             {
                 ItemListBuffer.Add(item.Name);
             }
-
-
 
             string item1 = ItemListBuffer[Random.Range(0, ItemListBuffer.Count)];
             _allLies[i].Tags[0] = item1;
@@ -151,29 +149,5 @@ public class LieListFinderTool : MonoBehaviour
             ItemListBuffer.Clear();
             i++;
         }
-
-
-
-        /*
-        foreach (LiesScript lie in _allLies)
-        {
-            int i = 0;
-            foreach (string lieTag in lie.LieTags)
-            {
-                lie.LieTags[i] = "sword";
-                i++;
-            }
-
-
-                int i = 0;
-                foreach (string lieTag in lie.LieTags)
-                {
-                    ItemScript item = _itemList.ItemSelection[Random.Range(0, _itemList.ItemSelection.Length)];
-                    lie.LieTags[i] = item.TAG;
-                    i++;
-                }
-
-            }
-            */
     }
 }

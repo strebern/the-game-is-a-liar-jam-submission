@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainLie: {fileID: 0}
-  _completeLiesList: {fileID: 0}
+  _completeLiesList: {fileID: 11400000, guid: f734a25ffc7b25c40847581a353ebd0d, type: 2}
 --- !u!1 &8615023298615990524
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,6 +277,18 @@ MonoBehaviour:
   - {fileID: 4801120064843901081}
   - {fileID: 261098396111236420}
   - {fileID: 6084962263291166043}
+--- !u!114 &7481933179918567136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8615023298615990524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7641bd4fd204583a3d03b6c869bab79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5427288003510929928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -365,11 +377,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4953068748821649703}
     m_Modifications:
-    - target: {fileID: 6116029018359478410, guid: d21d861fffbd6d942aa657fa3090e576,
-        type: 3}
-      propertyPath: m_Name
-      value: Graphics
-      objectReference: {fileID: 0}
     - target: {fileID: 7778142674253462166, guid: d21d861fffbd6d942aa657fa3090e576,
         type: 3}
       propertyPath: m_IsActive
@@ -429,6 +436,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116029018359478410, guid: d21d861fffbd6d942aa657fa3090e576,
+        type: 3}
+      propertyPath: m_Name
+      value: Graphics
       objectReference: {fileID: 0}
     - target: {fileID: 1919253533499832433, guid: d21d861fffbd6d942aa657fa3090e576,
         type: 3}
