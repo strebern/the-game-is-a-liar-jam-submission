@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Game.CharacterSelection;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -78,8 +79,13 @@ namespace Game.Dialog
 
             IsBeingDisplayed = false;
             IsFullyDisplayed = true;
-            
-            OnTextFullyDisplayed?.Invoke();
+
+            if (!_dialogInterrupted)
+            {
+                yield return new WaitForSeconds(1f);
+                FindObjectOfType<CharacterPresentationManager>().SwitchToNextPresentation(); // TODO: Crade
+                OnTextFullyDisplayed?.Invoke();
+            }
         }
     }
 }
