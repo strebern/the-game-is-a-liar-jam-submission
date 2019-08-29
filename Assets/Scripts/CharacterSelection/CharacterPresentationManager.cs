@@ -50,7 +50,7 @@ namespace Game.CharacterSelection
                 OnPresentationRoundEnding?.Invoke();
             }
         }
-        
+
         // PRIVATE
 
         private IEnumerator StartNewPresentationRoundRoutine()
