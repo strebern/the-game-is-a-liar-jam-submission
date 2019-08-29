@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Game.Inventory;
+using Game.Lies;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -16,10 +17,11 @@ namespace Game.Crew
         [Header("Settings")]
         [SerializeField] private Crew _crew;
 
-        public void AddCharacterToCrew(List<Item> characterItems, string characterName)
+        public void AddCharacterToCrew(List<Item> characterItems, string characterName, Lie lie)
         {
             _crew.Members[CurrentCrewSize].Items = characterItems;
-            _crew.Members[CurrentCrewSize].name = characterName;
+            _crew.Members[CurrentCrewSize].Name = characterName;
+            _crew.Members[CurrentCrewSize].Lie = lie;
 
             CurrentCrewSize++;
 

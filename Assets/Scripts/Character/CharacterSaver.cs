@@ -1,4 +1,5 @@
 ﻿using Game.Crew;
+using Game.Lies;
 using UnityEngine;
 
 namespace Game.Character
@@ -9,9 +10,10 @@ namespace Game.Character
         public void SaveCharacter()
         {
             var inventory = GetComponentInChildren<Inventory.Inventory>();
+            var lie = GetComponentInChildren<LieGenerator>().MainLie;
             if (inventory)
             {
-                FindObjectOfType<CrewManager>()?.AddCharacterToCrew(inventory.Items, "Yo");   
+                FindObjectOfType<CrewManager>()?.AddCharacterToCrew(inventory.Items, "Yo", lie);   
             }
         }
     }
