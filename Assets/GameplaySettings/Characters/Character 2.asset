@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e621cc1f1815a0842b7ef843b76bd563, type: 3}
-  m_Name: Yo
+  m_Name: Character 2
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Yo
   Items:
-  - {fileID: 11400000, guid: 4254d6d9c4d5c1e469c086115fa40751, type: 2}
-  - {fileID: 11400000, guid: fb5f2659b2c93c245b6ad1bf1fbfb215, type: 2}
-  - {fileID: 11400000, guid: 2add6929307af99499dd837ec753fb07, type: 2}
-  Lie: {fileID: 0}
+  - {fileID: 11400000, guid: 13279f763f765484d9ccf1a934626b63, type: 2}
+  - {fileID: 11400000, guid: 340730af7fd2c294cab379cd323b4359, type: 2}
+  - {fileID: 11400000, guid: 904d347388eca3f49b4c93695a25482e, type: 2}
+  Lie: {fileID: 11400000, guid: 2519aeace3ad66b458df3bc468fc9420, type: 2}

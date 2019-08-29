@@ -13,22 +13,22 @@ namespace Game.CharacterSelection
         [Header("Events")]
         public UnityEvent OnPresentationBeginning;
         public UnityEvent OnPresentationEnding;
-        
+
         // PUBLIC
 
         public void BeginPresentation()
         {
             IsActive = true;
-            
-            GetComponentInChildren<LieGenerator>().GenerateLie();
-            
+
+            GetComponentInChildren<LieGenerator>().DisplayLie();
+
             OnPresentationBeginning?.Invoke();
         }
 
         public void EndPresentation()
         {
             IsActive = false;
-            
+
             GetComponentInChildren<DialogDisplayer>().InterruptDialog();
 
             OnPresentationEnding?.Invoke();

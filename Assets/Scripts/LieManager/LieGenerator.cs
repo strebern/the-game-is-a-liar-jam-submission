@@ -17,16 +17,25 @@ namespace Game.Lies
 
         private List<Lie> _taggedLieList = new List<Lie>();
 
+        //CORE
+
+        private void Awake()
+        {
+            GenerateLie();
+        }
+
+        //PUBLIC
+
         public void GenerateLie()
         {
             var itemTag = _inventory.GetRandomItemTag();
-            
+
             int lieRank = Random.Range(1, 5);
             if (lieRank == 5)
             {
                 lieRank = Random.Range(3, 5);
             }
-            
+
             foreach (var lie in _completeLiesList.Lies)
             {
                 if (lie.Tags.Contains(itemTag) && lie.Rank == lieRank)
@@ -36,8 +45,10 @@ namespace Game.Lies
             }
 
             MainLie = _taggedLieList[Random.Range(0, _taggedLieList.Count)];
-            Debug.Log(MainLie.Text);
-            
+        }
+
+        public void DisplayLie()
+        {
             OnEventGenerated?.Invoke(MainLie.Text);
         }
     }

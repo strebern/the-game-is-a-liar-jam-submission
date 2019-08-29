@@ -14,7 +14,7 @@ namespace Game.Dialog
 
         [Header("Settings")]
         [SerializeField] private float _secondsBetweenCharacters;
-        
+
         [Header("References")]
         [SerializeField] private GameObject _dialogBox;
         [SerializeField] private TextMeshProUGUI _text;
@@ -23,7 +23,7 @@ namespace Game.Dialog
         public UnityEvent OnTextFullyDisplayed;
 
         private bool _dialogInterrupted = false;
-        
+
         // PUBLIC
 
         public void SetText(string text)
@@ -45,7 +45,7 @@ namespace Game.Dialog
 
         public void ShowDialogBox()
         {
-            Debug.Log("Showing dialog box");
+          //  Debug.Log("Showing dialog box");
             _dialogBox.SetActive(true);
         }
 
@@ -53,7 +53,7 @@ namespace Game.Dialog
         {
             _dialogBox.SetActive(false);
         }
-        
+
         // PRIVATE
 
         private IEnumerator SetTextCharacterByCharacterRoutine(string text)
@@ -61,7 +61,7 @@ namespace Game.Dialog
             var tempText = "";
 
             IsBeingDisplayed = true;
-            
+
             for (int i = 0; i <= text.Length; i++)
             {
                 tempText = text.Substring(0, i);

@@ -9,7 +9,7 @@ namespace Game.Inventory
     public class Inventory : MonoBehaviour
     {
         public List<Item> Items = new List<Item>();
-        
+
         [Header("Events")]
         public StringEvent OnItemsSet;
 
@@ -49,14 +49,12 @@ namespace Game.Inventory
                 Item item = ItemListBuffer[Random.Range(0, ItemListBuffer.Count)];
                 Items.Add(item);
                 ItemListBuffer.Remove(item);
-                Debug.Log("Selected : " + item);
-
                 step--;
             }
 
             OnItemsSet.Invoke(GetRandomItemTag());
         }
-        
+
         public string GetRandomItemTag()
         {
             Item item = Items[Random.Range(0, Items.Count)];

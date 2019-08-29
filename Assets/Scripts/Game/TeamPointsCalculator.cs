@@ -4,11 +4,20 @@ using UnityEngine;
 using Game.Crew;
 using Game.Character;
 using Game.Inventory;
-using Game.Lies;
+using TMPro;
 
 public class TeamPointsCalculator : MonoBehaviour
 {
     [SerializeField] private Crew _crew;
+    [SerializeField] private TextMeshProUGUI _pointsDisplay;
+    [SerializeField] private Highscore _highscore;
+    [SerializeField] private TextMeshProUGUI _highscoreDisplay;
+
+    private void Awake()
+    {
+        _highscore.HighScore = 0;
+    }
+
 
     public int  GetTeamPoints()
     {
@@ -97,5 +106,12 @@ public class TeamPointsCalculator : MonoBehaviour
             Debug.Log("TotalPoints increased by :  " + pointsMultiplier * lieRank);
         }
         Debug.Log("Total points for the crew is : " + totalPoints);
+        if(_highscore.HighScore < totalPoints)
+        {
+            _highscore.HighScore = totalPoints;
+            _highscoreDisplay.text = "Highscore : " + _highscore.HighScore.ToString();
+        }
+
+        _pointsDisplay.text = "Points : " + totalPoints.ToString();
     }
 }
