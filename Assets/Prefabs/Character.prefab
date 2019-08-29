@@ -442,7 +442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsBeingDisplayed: 0
   IsFullyDisplayed: 0
-  _secondsBetweenCharacters: 0
+  _secondsBetweenCharacters: 0.05
   _dialogBox: {fileID: 8615804930193953532}
   _text: {fileID: 1067791787278893891}
   OnTextFullyDisplayed:
@@ -450,20 +450,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &7600344033210115151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7311091305933352285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e944669df03cec3498a86448f21a03e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MainLie: {fileID: 0}
-  _completeLiesList: {fileID: 11400000, guid: f734a25ffc7b25c40847581a353ebd0d, type: 2}
 --- !u!1 &7529760189716506758
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,12 +1085,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7524978513784166354}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4216697590433658500 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5974763815295148374, guid: d21d861fffbd6d942aa657fa3090e576,
-    type: 3}
-  m_PrefabInstance: {fileID: 7524978513784166354}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6081473416155041191 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4326731976480021109, guid: d21d861fffbd6d942aa657fa3090e576,
@@ -1129,9 +1109,29 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7524978513784166354}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7151758432275117015 stripped
+--- !u!1 &4216697590433658500 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 805650041948922885, guid: d21d861fffbd6d942aa657fa3090e576,
+  m_CorrespondingSourceObject: {fileID: 5974763815295148374, guid: d21d861fffbd6d942aa657fa3090e576,
     type: 3}
   m_PrefabInstance: {fileID: 7524978513784166354}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7600344033210115151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e944669df03cec3498a86448f21a03e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainLie: {fileID: 0}
+  _completeLiesList: {fileID: 11400000, guid: f734a25ffc7b25c40847581a353ebd0d, type: 2}
+  _inventory: {fileID: 0}
+  OnEventGenerated:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Game.StringEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null

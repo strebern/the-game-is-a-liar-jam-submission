@@ -38,11 +38,10 @@ namespace Game.CharacterSelection
         
         public void SwitchToNextPresentation()
         {
-            CharacterPresenters[_currentPresentationIndex].EndPresentation();
-            _currentPresentationIndex++;
-
-            if (_currentPresentationIndex < CharacterPresenters.Count)
+            if (_currentPresentationIndex < CharacterPresenters.Count-1)
             {
+                CharacterPresenters[_currentPresentationIndex].EndPresentation();
+                _currentPresentationIndex++;
                 CharacterPresenters[_currentPresentationIndex].BeginPresentation();
             }
             else
