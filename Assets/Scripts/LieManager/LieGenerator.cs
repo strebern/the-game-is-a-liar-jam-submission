@@ -30,10 +30,10 @@ namespace Game.Lies
         {
             var itemTag = _inventory.GetRandomItemTag();
 
-            int lieRank = Random.Range(1, 5);
+            int lieRank = Random.Range(1, 6);
             if (lieRank == 5)
             {
-                lieRank = Random.Range(3, 5);
+                lieRank = Random.Range(3, 6);
             }
 
             foreach (var lie in _completeLiesList.Lies)
