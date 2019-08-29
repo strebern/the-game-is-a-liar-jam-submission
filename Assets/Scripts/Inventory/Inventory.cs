@@ -31,9 +31,9 @@ namespace Game.Inventory
             }
         }
 
-        //PRIVATE
+        // PUBLIC
 
-        private void SetCharacterItems()
+        public void SetCharacterItems()
         {
             Items.Clear();
             int step = 3;
@@ -56,8 +56,8 @@ namespace Game.Inventory
 
             OnItemsSet.Invoke(GetRandomItemTag());
         }
-
-        private string GetRandomItemTag()
+        
+        public string GetRandomItemTag()
         {
             Item item = Items[Random.Range(0, Items.Count)];
             return item.Name;

@@ -10,6 +10,9 @@ namespace Game.Dialog
     {
         public bool IsBeingDisplayed = false;
         public bool IsFullyDisplayed = false;
+
+        [Header("Settings")]
+        [SerializeField] private float _secondsBetweenCharacters;
         
         [Header("References")]
         [SerializeField] private GameObject _dialogBox;
@@ -17,6 +20,8 @@ namespace Game.Dialog
 
         [Header("Events")]
         public UnityEvent OnTextFullyDisplayed;
+
+        private bool _dialogInterrupted = false;
         
         // PUBLIC
 
@@ -25,11 +30,16 @@ namespace Game.Dialog
             _text.text = text;
         }
 
-        public void SetTextCharacterByCharacter(string text, float secondsBetweenCharacters)
+        public void SetTextCharacterByCharacter(string text)
         {
             IsFullyDisplayed = false;
             StopAllCoroutines();
-            StartCoroutine(SetTextCharacterByCharacterRoutine(text, secondsBetweenCharacters));
+            StartCoroutine(SetTextCharacterByCharacterRoutine(text));
+        }
+
+        public void InterruptDialog()
+        {
+            _dialogInterrupted = true;
         }
 
         public void ShowDialogBox()
@@ -45,7 +55,7 @@ namespace Game.Dialog
         
         // PRIVATE
 
-        private IEnumerator SetTextCharacterByCharacterRoutine(string text, float secondsBetweenCharacters)
+        private IEnumerator SetTextCharacterByCharacterRoutine(string text)
         {
             var tempText = "";
 
@@ -54,8 +64,16 @@ namespace Game.Dialog
             for (int i = 0; i <= text.Length; i++)
             {
                 tempText = text.Substring(0, i);
-                SetText(tempText);
-                yield return new WaitForSeconds(secondsBetweenCharacters);
+                if (!_dialogInterrupted)
+                {
+                    SetText(tempText);
+                    yield return new WaitForSeconds(_secondsBetweenCharacters);
+                }
+                else
+                {
+                    SetText(tempText + "...");
+                    yield break;
+                }
             }
 
             IsBeingDisplayed = false;

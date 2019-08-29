@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -12,6 +13,7 @@ namespace Game.CharacterSelection
 
         [Header("Events")]
         public UnityEvent OnPresentationRoundBeginning;
+        public UnityEvent OnAllCharactersPresent;
         public UnityEvent OnPresentationRoundEnding;
 
         private int _currentPresentationIndex = 0;
@@ -30,9 +32,8 @@ namespace Game.CharacterSelection
 
         public void StartNewPresentationRound()
         {
-            _currentPresentationIndex = 0;
-
-            OnPresentationRoundBeginning?.Invoke();
+            StopAllCoroutines();
+            StartCoroutine(StartNewPresentationRoundRoutine());
         }
         
         public void SwitchToNextPresentation()
@@ -48,6 +49,17 @@ namespace Game.CharacterSelection
             {
                 OnPresentationRoundEnding?.Invoke();
             }
+        }
+        
+        // PRIVATE
+
+        private IEnumerator StartNewPresentationRoundRoutine()
+        {
+            _currentPresentationIndex = 0;
+
+            OnPresentationRoundBeginning?.Invoke();
+            yield return new WaitForSeconds(2f);
+            OnAllCharactersPresent?.Invoke();
         }
     }
 }

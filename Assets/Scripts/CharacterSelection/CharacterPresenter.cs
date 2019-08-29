@@ -1,4 +1,5 @@
 ﻿using Game.Dialog;
+using Game.Lies;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -19,11 +20,7 @@ namespace Game.CharacterSelection
         {
             IsActive = true;
             
-            Debug.Log("Plop");
-            
-            var dialogDisplayer = GetComponentInChildren<DialogDisplayer>();
-            dialogDisplayer.ShowDialogBox();
-            dialogDisplayer.SetTextCharacterByCharacter("blalbalbalaldqssaall",.2f);
+            GetComponentInChildren<LieGenerator>().GenerateLie();
             
             OnPresentationBeginning?.Invoke();
         }
@@ -32,8 +29,7 @@ namespace Game.CharacterSelection
         {
             IsActive = false;
             
-            var dialogDisplayer = GetComponentInChildren<DialogDisplayer>();
-            dialogDisplayer.HideDialogBox();
+            GetComponentInChildren<DialogDisplayer>().InterruptDialog();
 
             OnPresentationEnding?.Invoke();
         }
