@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Lie 19
   m_EditorClassIdentifier: 
   Rank: 2
-  Text: "Je tiens cette \xE9p\xE9e de mon grand p\xE8re, un tueur de dragon, mais
-    elle est trop lourde pour l'utiliser."
+  Text: This sword comes from my grandpa' the Dragon Slayer, but he can't hold it
+    no more ... since he's dead you know.
   Tags:
   - Sword
   - Dagger

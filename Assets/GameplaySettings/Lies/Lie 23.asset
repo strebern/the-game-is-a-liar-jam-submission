@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Lie 23
   m_EditorClassIdentifier: 
   Rank: 3
-  Text: "Un grand chef de clan m'a donn\xE9 cette lance, elle peux transpercer un
-    boeuf"
+  Text: An orc warlord gave me this spear, it can pierce through buffalos of the Old
+    Plains.
   Tags:
   - Sword
   - Spear

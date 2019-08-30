@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Lie 21
   m_EditorClassIdentifier: 
   Rank: 3
-  Text: "J'ai tu\xE9 3 bandits avec ma dague mias ma magie est encore plus impressionante"
+  Text: I killed 2 bandits on my way to the tavern with my dagger, and resurrected
+    them with my magic (it's those 2 guys).
   Tags:
   - Armor
   - Dagger

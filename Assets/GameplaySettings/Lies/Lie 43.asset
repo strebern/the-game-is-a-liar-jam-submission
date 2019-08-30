@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Lie 43
   m_EditorClassIdentifier: 
   Rank: 5
-  Text: "Vous avez vu la roche devant l'entr\xE9e ? je peux la briser en deux avec
-    mes poings"
+  Text: Seen the big rock outside ? I can break it with my bare fists.
   Tags:
   - Dagger
   - Wand

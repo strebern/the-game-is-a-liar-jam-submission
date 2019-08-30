@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lie 30
   m_EditorClassIdentifier: 
   Rank: 3
-  Text: "mon arc touche \xE0 tout les coups"
+  Text: My arrows hit each and every target since I was a child.
   Tags:
   - Cape
   - Helmet

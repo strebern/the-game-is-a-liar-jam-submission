@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Lie 20
   m_EditorClassIdentifier: 
   Rank: 2
-  Text: "les brulures sur mes doigts ? c'est a force de bander mon arc avec mes fleches
-    s\xE9pciales."
+  Text: These burns on my finger ? Its 'cause of the arrows I enchant.
   Tags:
   - Wand
   - Sword

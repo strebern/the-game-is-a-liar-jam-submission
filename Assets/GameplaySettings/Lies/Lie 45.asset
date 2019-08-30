@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lie 45
   m_EditorClassIdentifier: 
   Rank: 5
-  Text: "J'ai d\xE9j\xE0  tu\xE9 un griffon et mang\xE9 son coeur"
+  Text: I once killed a gryffin and ate his heart. My friend Rubeus was not very happy.
   Tags:
   - Helmet
   - Dagger

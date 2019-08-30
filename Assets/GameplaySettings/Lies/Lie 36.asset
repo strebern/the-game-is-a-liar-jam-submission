@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lie 36
   m_EditorClassIdentifier: 
   Rank: 4
-  Text: "Je sais me camoufler comme un cam\xE9l\xE9on pour surprendre mes adversaires"
+  Text: I can hide like a chameleon and sneak up on my opponents.
   Tags:
   - Dagger
   - Cape

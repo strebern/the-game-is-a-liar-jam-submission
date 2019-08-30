@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lie 29
   m_EditorClassIdentifier: 
   Rank: 3
-  Text: "mes comp\xE9tences a l'arc ne sont rien compar\xE9 a ma maitrise du pugilat"
+  Text: My mastery of the bow is nothing compare to my bare hands skills.
   Tags:
   - Sword
   - Bow

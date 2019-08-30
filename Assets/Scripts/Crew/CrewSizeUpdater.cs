@@ -14,7 +14,7 @@ namespace Game.Crew
         
         public void UpdateCrewSizeText(int crewSize)
         {
-            _crewSizeText.text = crewSize + "/" + _settings.MaxCrewSize;
+            _crewSizeText.text = "Crew size : " + crewSize + "/" + _settings.MaxCrewSize;
         }
     }
 }

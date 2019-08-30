@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lie 39
   m_EditorClassIdentifier: 
   Rank: 4
-  Text: "Mon armure est plus r\xE9sistante que l'acier de mes lames"
+  Text: My armor is more resistant than the steal of my blade.
   Tags:
   - Sword
   - Dagger

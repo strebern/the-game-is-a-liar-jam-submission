@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lie 28
   m_EditorClassIdentifier: 
   Rank: 3
-  Text: "Je suis un excellent combattant au corps \xE0 corps"
+  Text: I am an excellent melee fighter, think of me as a troll if that helps.
   Tags:
   - Spear
   - Helmet

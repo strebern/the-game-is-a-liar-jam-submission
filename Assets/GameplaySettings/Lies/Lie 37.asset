@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Lie 37
   m_EditorClassIdentifier: 
   Rank: 4
-  Text: "Vous avez d\xE9j\xE0 d\xE9capit\xE9  trois goules d'un coup vous ... Non
-    je ne crois pas !"
+  Text: Have you ever beheaded three ghouls in one swing ? No I don't think so good
+    Sir !
   Tags:
   - Axe
   - Shield
