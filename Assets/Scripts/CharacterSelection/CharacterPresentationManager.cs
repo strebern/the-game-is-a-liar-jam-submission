@@ -46,14 +46,11 @@ namespace Game.CharacterSelection
         
         public void SwitchToNextPresentation()
         {
+            _currentPresentationIndex++;
             if (_currentPresentationIndex < CharacterPresenters.Count)
             {
-                CharacterPresenters[_currentPresentationIndex].EndPresentation();
-                _currentPresentationIndex++;
-                if (_currentPresentationIndex < CharacterPresenters.Count)
-                {
-                    CharacterPresenters[_currentPresentationIndex].BeginPresentation();
-                }
+                CharacterPresenters[_currentPresentationIndex-1].EndPresentation();
+                CharacterPresenters[_currentPresentationIndex].BeginPresentation();
             }
             else
             {
