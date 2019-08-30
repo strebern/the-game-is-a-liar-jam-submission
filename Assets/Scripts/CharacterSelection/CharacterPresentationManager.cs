@@ -14,7 +14,9 @@ namespace Game.CharacterSelection
         [Header("Events")]
         public UnityEvent OnPresentationRoundBeginning;
         public UnityEvent OnAllCharactersPresent;
+        public UnityEvent OnAllCharactersIntroduced;
         public UnityEvent OnPresentationRoundEnding;
+        public UnityEvent OnAllCharactersDisappeared;
 
         private int _currentPresentationIndex = 0;
         
@@ -35,18 +37,27 @@ namespace Game.CharacterSelection
             StopAllCoroutines();
             StartCoroutine(StartNewPresentationRoundRoutine());
         }
+
+        public void EndCurrentPresentationRound()
+        {
+            StopAllCoroutines();
+            StartCoroutine(EndCurrentPresentationRoundRoutine());
+        }
         
         public void SwitchToNextPresentation()
         {
-            if (_currentPresentationIndex < CharacterPresenters.Count-1)
+            if (_currentPresentationIndex < CharacterPresenters.Count)
             {
                 CharacterPresenters[_currentPresentationIndex].EndPresentation();
                 _currentPresentationIndex++;
-                CharacterPresenters[_currentPresentationIndex].BeginPresentation();
+                if (_currentPresentationIndex < CharacterPresenters.Count)
+                {
+                    CharacterPresenters[_currentPresentationIndex].BeginPresentation();
+                }
             }
             else
             {
-                OnPresentationRoundEnding?.Invoke();
+                OnAllCharactersIntroduced?.Invoke();
             }
         }
 
@@ -59,6 +70,13 @@ namespace Game.CharacterSelection
             OnPresentationRoundBeginning?.Invoke();
             yield return new WaitForSeconds(2f);
             OnAllCharactersPresent?.Invoke();
+        }
+        
+        private IEnumerator EndCurrentPresentationRoundRoutine()
+        {
+            OnPresentationRoundEnding?.Invoke();
+            yield return new WaitForSeconds(3f);
+            OnAllCharactersDisappeared?.Invoke();
         }
     }
 }

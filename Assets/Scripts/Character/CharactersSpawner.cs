@@ -8,7 +8,7 @@ using UnityEngine.Events;
 namespace Game.Character
 {
     [DisallowMultipleComponent]
-    public class CharacterSpawner : MonoBehaviour
+    public class CharactersSpawner : MonoBehaviour
     {
         [Header("Settings")] 
         [SerializeField] private CharacterSelectionSettings _settings;
