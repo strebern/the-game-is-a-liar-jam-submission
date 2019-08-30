@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Lie 2
   m_EditorClassIdentifier: 
   Rank: 1
-  Text: "Tu a devant toi un expert des armes tranchantes, j'ai en effet \xE9t\xE9
-    form\xE9 par le poissonier du coin"
+  Text: I am sir, an EXPERT in sharp weapons, trained by the local fishmonger.
   Tags:
   - Sword
   - Helmet

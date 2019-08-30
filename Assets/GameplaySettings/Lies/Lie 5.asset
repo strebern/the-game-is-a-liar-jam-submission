@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Lie 5
   m_EditorClassIdentifier: 
   Rank: 1
-  Text: "mon casque enchant\xE9 fais fuir les moustiques"
+  Text: My enchanted helmet scares mosquitoes away, if it's not useful to you I don't
+    know what will be.
   Tags:
   - Wand
   - Bow

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Lie 43
   m_EditorClassIdentifier: 
   Rank: 5
-  Text: Seen the big rock outside ? I can break it with my bare fists.
+  Text: Seen the big rock outside ? I can break it with my bare fists and eat it with
+    my silver teeth.
   Tags:
   - Dagger
   - Wand

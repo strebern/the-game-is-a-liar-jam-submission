@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Lie 1
   m_EditorClassIdentifier: 
   Rank: 1
-  Text: "Salut mon gars, un jour j'ai tr\xE9buch\xE9 sur ma lance et mon bouclier
-    est tomb\xE9 sur mon pied"
+  Text: Howdy, one day my spear and my shield fell on my foot, it hurts.
   Tags:
   - Dagger
   - Spear

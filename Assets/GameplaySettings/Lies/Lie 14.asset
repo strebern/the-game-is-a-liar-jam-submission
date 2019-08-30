@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Lie 14
   m_EditorClassIdentifier: 
   Rank: 2
-  Text: "un jour j'ai transperc\xE9 un gobelin en tr\xE9buchant sur ma cape"
+  Text: Last year, I butchered a skeleton while slipping on my cloack. Call it "accident"
+    I call it "skill".
   Tags:
   - Shield
   - Cape

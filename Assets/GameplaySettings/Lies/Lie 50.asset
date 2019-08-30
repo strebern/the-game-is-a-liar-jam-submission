@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Lie 50
   m_EditorClassIdentifier: 
   Rank: 5
-  Text: You already chose me, you just don't know it yet.
+  Text: You already chose me, you just don't know it yet. *you feel like you have
+    to pick him*
   Tags:
   - Sword
   - Bow

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Lie 16
   m_EditorClassIdentifier: 
   Rank: 2
-  Text: "J'ai r\xE9cuperer l'armure d'un bandit, mais il y a un gros trou derriere
-    maintenant..."
+  Text: I slayed a bandit and picked up his armor so don't mind the big hole on my
+    back. I use it for aeration.
   Tags:
   - Dagger
   - Armor

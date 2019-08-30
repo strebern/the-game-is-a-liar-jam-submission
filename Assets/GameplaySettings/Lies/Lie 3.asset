@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Lie 3
   m_EditorClassIdentifier: 
   Rank: 1
-  Text: Je suis un barde, je tape sur mon boucllier avec ma hache pour faire toute
-    sorte de musique
+  Text: A bard I am indeed, I hit my shield with my axe and it makes strange noises...
+    Don't judge me please.
   Tags:
   - Cape
   - Axe
