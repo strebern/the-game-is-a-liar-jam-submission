@@ -1396,6 +1396,7 @@ GameObject:
   - component: {fileID: 1278831692}
   - component: {fileID: 1278831693}
   - component: {fileID: 1278831694}
+  - component: {fileID: 1278831695}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -1449,30 +1450,8 @@ MonoBehaviour:
   OnCrewFull:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 324568602}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1746943359}
-        m_MethodName: CalculateTeamPoints
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 771267442}
-        m_MethodName: IncreaseDifficulty
+      - m_Target: {fileID: 1278831695}
+        m_MethodName: ActivateEndBattle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1648,6 +1627,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4065e54c37d94fcda1123e80edc12b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1278831695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278831690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d1f462a287497985e7a2335b41c03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _battleSeconds: 6
+  OnBattleBegin:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnBattleEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 324568602}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1746943359}
+        m_MethodName: CalculateTeamPoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 771267442}
+        m_MethodName: IncreaseDifficulty
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1312923026
 GameObject:
   m_ObjectHideFlags: 0
@@ -2298,7 +2333,7 @@ PrefabInstance:
     - target: {fileID: 2462143855759912183, guid: c7d61e22464ab1e42b95c12f37208f85,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2462143855759912183, guid: c7d61e22464ab1e42b95c12f37208f85,
         type: 3}
@@ -2670,10 +2705,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1278831691}
-  - {fileID: 1859511878}
-  - {fileID: 5524802486973133081}
   - {fileID: 1746943358}
   - {fileID: 2731175441633799512}
+  - {fileID: 1859511878}
+  - {fileID: 5524802486973133081}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2758,7 +2793,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1802146354}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1889125394 stripped
 MonoBehaviour:
@@ -3173,7 +3208,7 @@ PrefabInstance:
     - target: {fileID: 8362182012972119357, guid: 049c69181a708a5439bcfffcdaa84cc4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8362182012972119357, guid: 049c69181a708a5439bcfffcdaa84cc4,
         type: 3}
@@ -3666,7 +3701,7 @@ PrefabInstance:
     - target: {fileID: 3396645922542507366, guid: cf916add87db6584ebcfabef6b27950f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3396645922542507366, guid: cf916add87db6584ebcfabef6b27950f,
         type: 3}

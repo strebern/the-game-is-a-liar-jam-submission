@@ -20,16 +20,6 @@ namespace Game.CharacterSelection
 
         private int _currentPresentationIndex = 0;
         
-        // CORE
-
-        private void Update()
-        {
-            if (Input.GetButtonDown("SkipPresentation"))
-            {
-                SwitchToNextPresentation();
-            }
-        }
-
         // PUBLIC
 
         public void StartNewPresentationRound()
