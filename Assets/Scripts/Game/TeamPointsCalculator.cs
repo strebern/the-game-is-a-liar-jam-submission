@@ -15,9 +15,8 @@ public class TeamPointsCalculator : MonoBehaviour
 
     private void Awake()
     {
-        _highscore.HighScore = 0;
+        _highscoreDisplay.text = "Highscore : " + _highscore.HighScore.ToString();
     }
-
 
     public int  GetTeamPoints()
     {

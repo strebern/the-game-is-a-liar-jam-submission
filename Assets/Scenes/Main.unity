@@ -3345,11 +3345,36 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7482143993404768004, guid: 346efad42e25b0f4e872704fdd586362,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482143993404768004, guid: 346efad42e25b0f4e872704fdd586362,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482143993404768004, guid: 346efad42e25b0f4e872704fdd586362,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482143993404768004, guid: 346efad42e25b0f4e872704fdd586362,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482143993404768004, guid: 346efad42e25b0f4e872704fdd586362,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 346efad42e25b0f4e872704fdd586362, type: 3}
 --- !u!114 &3761674886056112899 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8224607398899965533, guid: 346efad42e25b0f4e872704fdd586362,
+  m_CorrespondingSourceObject: {fileID: 7482143993404768004, guid: 346efad42e25b0f4e872704fdd586362,
     type: 3}
   m_PrefabInstance: {fileID: 3761674886056112898}
   m_PrefabAsset: {fileID: 0}
