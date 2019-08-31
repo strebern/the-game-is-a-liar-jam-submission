@@ -12,6 +12,7 @@ namespace Game.Game
         
         [Header("Events")]
         public UnityEvent OnBattleBegin;
+        public UnityEvent OnBattleMiddle;
         public UnityEvent OnBattleEnd;
         
         // PUBLIC
@@ -26,7 +27,9 @@ namespace Game.Game
         private IEnumerator EndBattleRoutine()
         {
             OnBattleBegin?.Invoke();
-            yield return new WaitForSeconds(_battleSeconds);
+            yield return new WaitForSeconds(_battleSeconds/2f);
+            OnBattleMiddle?.Invoke();
+            yield return new WaitForSeconds(_battleSeconds/2f);
             OnBattleEnd?.Invoke();
         }
     }

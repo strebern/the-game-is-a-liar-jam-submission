@@ -49,7 +49,10 @@ namespace Game.Lies
 
         public void DisplayLie()
         {
-            OnEventGenerated?.Invoke(MainLie.Text);
+            if (MainLie)
+            {
+                OnEventGenerated?.Invoke(MainLie.Text);
+            }
         }
     }
 }
