@@ -12,13 +12,15 @@ public class TeamPointsCalculator : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _pointsDisplay;
     [SerializeField] private Highscore _highscore;
     [SerializeField] private TextMeshProUGUI _highscoreDisplay;
+    [SerializeField] private GoblinsSpawnNumber _goblinsSpawnNumber;
+    [SerializeField] private DifficultyManager _difficultyManager;
 
     private void Awake()
     {
-        _highscoreDisplay.text = "Highscore : " + _highscore.HighScore.ToString();
+        _highscoreDisplay.text = "Max Kills  " + _highscore.HighScore.ToString();
     }
 
-    public int  GetTeamPoints()
+    public int GetTeamPoints()
     {
         var totalPoints = 0;
 
@@ -105,12 +107,20 @@ public class TeamPointsCalculator : MonoBehaviour
             Debug.Log("TotalPoints increased by :  " + pointsMultiplier * lieRank);
         }
         Debug.Log("Total points for the crew is : " + totalPoints);
-        if(_highscore.HighScore < totalPoints)
+        if (_highscore.HighScore < totalPoints)
         {
             _highscore.HighScore = totalPoints;
-            _highscoreDisplay.text = "Highscore : " + _highscore.HighScore.ToString();
+            _highscoreDisplay.text = "Max Kills : " + _highscore.HighScore.ToString();
         }
 
-        _pointsDisplay.text = "Points : " + totalPoints.ToString();
+        if (totalPoints < _goblinsSpawnNumber._goblinsBaseNumbers)
+        {
+            _pointsDisplay.text = "Your crew killed " + totalPoints.ToString() + " Goblins before getting savagely murdered... Maybe you can do Better with the next crew !";
+            _difficultyManager.ResetDifficulty();
+        }
+        else
+        {
+            _pointsDisplay.text = "Your crew killed " + totalPoints.ToString() + " Goblins and went back safely at the tavern to enjoy some brewed beer !";
+        }
     }
 }

@@ -2297,6 +2297,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: d69764b2b7268a34cbcfd0aadb4d8a87,
         type: 2}
+    - target: {fileID: 3775096145299481242, guid: c7d61e22464ab1e42b95c12f37208f85,
+        type: 3}
+      propertyPath: _goblinsSpawnNumber
+      value: 
+      objectReference: {fileID: 11400000, guid: bc808d4ce79a33c4e8d7574b0f1bf138,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7d61e22464ab1e42b95c12f37208f85, type: 3}
 --- !u!4 &1746943358 stripped
