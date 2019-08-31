@@ -12,10 +12,10 @@ namespace Game.CharacterSelection
             {
                 dialogDisplayer.HideDialogBox();
             }
-            
+
             foreach (var animator in GetComponentsInChildren<Animator>())
             {
-                animator.SetTrigger("FadeOut");   
+                animator.SetBool("Fade", true);
             }
         }
     }
