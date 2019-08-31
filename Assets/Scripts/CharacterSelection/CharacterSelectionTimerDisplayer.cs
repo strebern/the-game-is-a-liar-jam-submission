@@ -11,7 +11,7 @@ namespace Game.CharacterSelection
         
         public void UpdateTimer(int timeLeft)
         {
-            _timerText.text = timeLeft + "seconds left";
+            _timerText.text = timeLeft + " seconds left";
         }
     }
 }
