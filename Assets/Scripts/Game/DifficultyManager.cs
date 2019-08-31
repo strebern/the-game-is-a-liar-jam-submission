@@ -4,16 +4,18 @@ using TMPro;
 public class DifficultyManager : MonoBehaviour
 {
     [SerializeField] private GoblinsSpawnNumber _goblinsSpawnNumber;
-    [SerializeField] private TextMeshProUGUI _goblinsNumbers;
-
-    private int _currentGoblinsSpawnNumber;
+    [SerializeField] private TextMeshProUGUI _goblinsNumbersDisplay;
 
     //CORE
 
     private void Awake()
     {
-        _currentGoblinsSpawnNumber = _goblinsSpawnNumber._goblinsBaseNumbers + Random.Range(-5,6); ;
-        _goblinsNumbers.text = "Goblins to kill : " + _currentGoblinsSpawnNumber;
+        if (_goblinsSpawnNumber._goblinsBaseNumbers == 0)
+        {
+            _goblinsSpawnNumber._goblinsBaseNumbers = 30;
+        }
+        _goblinsSpawnNumber._goblinsBaseNumbers = _goblinsSpawnNumber._goblinsBaseNumbers + Random.Range(-5, 6); ;
+        _goblinsNumbersDisplay.text = "Goblins to kill : " + _goblinsSpawnNumber._goblinsBaseNumbers;
     }
 
     //PUBLIC
@@ -26,6 +28,6 @@ public class DifficultyManager : MonoBehaviour
     public void ResetDifficulty()
     {
         _goblinsSpawnNumber._goblinsBaseNumbers = 30;
-        _goblinsNumbers.text = "Goblins to kill : " + _goblinsSpawnNumber._goblinsBaseNumbers;
+        _goblinsNumbersDisplay.text = "Goblins to kill : " + _goblinsSpawnNumber._goblinsBaseNumbers;
     }
 }

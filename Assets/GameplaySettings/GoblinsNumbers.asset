@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab8f5f3dde1b16048ad204f048d942be, type: 3}
   m_Name: GoblinsNumbers
   m_EditorClassIdentifier: 
-  _goblinsBaseNumbers: 35
+  _goblinsBaseNumbers: 0
