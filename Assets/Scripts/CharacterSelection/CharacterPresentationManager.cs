@@ -47,9 +47,9 @@ namespace Game.CharacterSelection
         public void SwitchToNextPresentation()
         {
             _currentPresentationIndex++;
+            CharacterPresenters[_currentPresentationIndex-1].EndPresentation();
             if (_currentPresentationIndex < CharacterPresenters.Count)
             {
-                CharacterPresenters[_currentPresentationIndex-1].EndPresentation();
                 CharacterPresenters[_currentPresentationIndex].BeginPresentation();
             }
             else
@@ -65,7 +65,7 @@ namespace Game.CharacterSelection
             _currentPresentationIndex = 0;
 
             OnPresentationRoundBeginning?.Invoke();
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(3f);
             OnAllCharactersPresent?.Invoke();
         }
         

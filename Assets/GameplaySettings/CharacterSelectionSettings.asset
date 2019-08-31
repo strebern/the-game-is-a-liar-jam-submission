@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f43bc0b415f624b9365fdf484a0bc1, type: 3}
   m_Name: CharacterSelectionSettings
   m_EditorClassIdentifier: 
-  CrewSize: 5
   CharactersPerSelection: 3
-  SecondsPerSelection: 20
+  SecondsPerSelection: 25
   CharacterPrefab: {fileID: 8615023298615990524, guid: d288ec2c7c3196a46a9776f623bf226f,
     type: 3}

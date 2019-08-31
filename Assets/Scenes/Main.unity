@@ -995,6 +995,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7174029626150659199}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &811167953 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8058031490428247780, guid: cf916add87db6584ebcfabef6b27950f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7174029626150659199}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811167952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &977025111
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,6 +1530,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 811167953}
+        m_MethodName: set_interactable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   OnAllCharactersIntroduced:
@@ -1526,6 +1549,17 @@ MonoBehaviour:
       - m_Target: {fileID: 7174029626150659200}
         m_MethodName: ActivateButtons
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 811167953}
+        m_MethodName: set_interactable
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3410,7 +3444,7 @@ PrefabInstance:
     - target: {fileID: 9086066731067750295, guid: cf916add87db6584ebcfabef6b27950f,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1692843768411143992, guid: cf916add87db6584ebcfabef6b27950f,
         type: 3}
@@ -3601,6 +3635,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8058031490428247780, guid: cf916add87db6584ebcfabef6b27950f,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2351680748495111609, guid: cf916add87db6584ebcfabef6b27950f,
         type: 3}

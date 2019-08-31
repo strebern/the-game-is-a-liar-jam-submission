@@ -5,9 +5,19 @@ namespace Game.Utils
     [DisallowMultipleComponent]
     public class DontDestroyOnLoad : MonoBehaviour
     {
+        public static GameObject Instance;
+    
         private void Awake()
         {
-            DontDestroyOnLoad(gameObject);
+            if (Instance == null)
+            {
+                DontDestroyOnLoad(gameObject);
+                Instance = gameObject;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
